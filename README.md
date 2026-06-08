@@ -12,7 +12,7 @@ The output table includes the chromosome, position, reference allele, and one co
 ### Usage
 
 ```bash
-python vcf_missing_recode.py input.vcf.gz output_missing.tsv
+python step_01_missing_data_convert.py input.vcf.gz output_missing.tsv
 ```
 
 ### Arguments
@@ -42,7 +42,7 @@ Empty windows (i.e., windows without any variants) are omitted from the output.
 ### Usage
 
 ```bash
-python script.py input_file.tsv output_file.csv --window_size 100000 --step_size 50000
+python step_02_missing_data_windows.py input_file.tsv output_file.csv --window_size 100000 --step_size 50000
 ```
 
 ### Arguments
